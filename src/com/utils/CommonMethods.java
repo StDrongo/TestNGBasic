@@ -26,10 +26,10 @@ public class CommonMethods {
 	public static void setUp(String browser, String url) {
 
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.gecko.driver", "drivers//geckodriver.exe");
+			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "drivers//geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		} else {
