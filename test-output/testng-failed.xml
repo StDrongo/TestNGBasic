@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.class02.Task">
+      <class name="com.class03.DataProviderDemo">
         <methods>
-          <include name="Close"/>
-          <include name="OpenAndNavigate"/>
-          <include name="ifDisp"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="login" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- com.class02.Task -->
+      </class> <!-- com.class03.DataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
